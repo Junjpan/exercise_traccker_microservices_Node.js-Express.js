@@ -1,0 +1,21 @@
+extends layout
+block content
+    div
+        h3(style="font-weight:bold")  Set Up An Account
+        h5 
+        |  After you submit your username, the system will<br> 
+        |  generate an user ID to you and please keep<br> 
+        |  it in the safe place, you need to require your <br>
+        |  user ID to login in the future.
+        br
+        form.form-signin(method="POST",action="/user/add/")
+            .form-group
+            label(style="font-weight:bold") User Name:
+            input.form-control(name="username",type="text",autofocus  required title="The username's length must be more than 8 characters long.")
+            br
+            input.btn.btn-lg.btn-primary.btn-block(type="submit",value="Register")
+        
+            
+
+
+    

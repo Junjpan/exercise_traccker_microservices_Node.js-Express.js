@@ -1,0 +1,9 @@
+extends layout
+block content
+    
+    h4(style="color:red") The username you entered is already existed,please pick different username.
+        br
+        br
+        br
+    a(href="/api/exercise/new-user")
+        input.btn.btn-lg.btn-primary(type="submit",value="Go Back")    

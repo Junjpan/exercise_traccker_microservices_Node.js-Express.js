@@ -1,0 +1,27 @@
+doctype html
+html
+    head
+        title Exercise Tracker Microservice
+        link(rel="stylesheet", href="/css/style.css")
+        link(rel="stylesheet", href="/css/signin.css")
+        link(rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous")    
+    body.container.text-center
+        h1.title 
+            img(src="/exercise.jpg" width=120 height=100 alt="exercise.jpg") 
+            |Exercise Tracker Microservice
+            h5(style="color:red") #{message}
+                h5(style="text-align:right; margin-right:10%;color:gray") #{username}
+            //-In html we use <%=vairable%> to get the render date
+        br
+        block content
+        br
+    a.link(href="/") 
+        h7 Return to Home Page
+        br
+        hr
+        
+    footer.footer
+        p Copyright &copy: 2019  
+        
+
+            

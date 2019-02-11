@@ -1,0 +1,19 @@
+{
+  "name": "exercise_tracker_microservices",
+  "version": "1.0.0",
+  "description": "full stack javascript project-freecodecamp",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
+  },
+  "author": "Junjpan",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4",
+    "moment": "^2.24.0",
+    "mongoose": "^5.4.8",
+    "pug": "^2.0.3"
+  }
+}

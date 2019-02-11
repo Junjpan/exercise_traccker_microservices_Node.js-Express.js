@@ -1,0 +1,18 @@
+extends layout
+block content
+    h1 ADD EXERCISE
+    form.form-signin(method="POST",action="/api/exercise/log")
+            .form-group
+            label UserID:
+            input.form-control(name="userid",type="text",value=userid autofocus  required title="The username's length must be more than 8 characters long.")
+            .form-group
+            label Description:
+            input.form-control(name="description",type="text", required="")
+            .form-group
+            label Durations(mins):
+            input.form-control(name="duration",type="text", required="")
+            .form-group
+            label Date(yyyy-mm-dd):
+            input.form-control(name="date",type="text", required="")
+            br
+            input.btn.btn-lg.btn-primary.btn-block(type="submit",value="ADD")

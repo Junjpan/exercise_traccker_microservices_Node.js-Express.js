@@ -1,0 +1,14 @@
+extends layout
+block content
+    h3 Search Result, total 
+        span(style="color:red") #{count} 
+        |match <br>
+        each result, i in log
+            div.display  
+                span.gray DATE: &nbsp  #{result.date}      
+                span.blue USER ID: &nbsp #{result.userid} 
+                span.purple DURATION(MINS): &nbsp   #{result.duration }
+                span.pink DESCRIPTION: &nbsp   #{result.description }
+                hr    
+    h5
+        a.link(href="/api/exercise/search" target="_blank" style="color:black;font-weight:bold")    Anther Search &rarr; 

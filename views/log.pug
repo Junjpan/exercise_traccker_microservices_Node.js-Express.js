@@ -1,0 +1,16 @@
+extends layout
+block content
+    h3 Recent Exercise Log <br>
+        div.display  
+            span.blue USER ID: &nbsp #{log.userid} 
+            br       
+            span.pink DESCRIPTION: &nbsp   #{log.description }
+            br
+            span.purple DURATION(MINS): &nbsp   #{log.duration }
+            br
+            span.gray DATE: &nbsp  #{log.date}
+            hr    
+    h5
+        a.link(href="/api/exercise/search" target="_blank" style="color:black;float:right")    Search exercise log &rarr; 
+
+    

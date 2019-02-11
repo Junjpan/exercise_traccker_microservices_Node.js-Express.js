@@ -1,0 +1,10 @@
+extends layout
+block content
+    h3.id Your Username is: 
+        span &nbsp #{username} &nbsp
+    h3.id Your UserID is: 
+        span &nbsp #{userid} &nbsp
+        br
+        br
+    a(href="/")
+        input.btn.btn-primary(type="submit" value="Go to Log In Page Now")   

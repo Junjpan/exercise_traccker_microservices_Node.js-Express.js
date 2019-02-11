@@ -1,0 +1,15 @@
+extends layout
+block content
+    form.form-signin(method="POST",action="/api/exercise/search")
+            .form-group
+            label User ID:
+            input.form-control(name="userid",type="text" autofocus  required)
+            .form-group
+            label Date-optional:
+            input.form-control(name="date",type="date" )
+            .form-group
+            label Durations(mins)-optional:
+            input.form-control(name="duration",type="text" )
+           
+            br
+            input.btn.btn-lg.btn-primary.btn-block(type="submit",value="SEARCH")
